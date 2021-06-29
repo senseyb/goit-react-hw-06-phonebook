@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
-
-import Layout from "./Layout/Layout";
-import Section from "./Layout/Section";
+import Section from "./Section/Section";
 import ContactForm from "./ContactForm/ContactForm";
 import ContactsList from "./ContactsList/ContactsList";
 import Filter from "./Filter/Filter";
@@ -13,7 +11,7 @@ function App({ contacts }) {
   }, [contacts]);
 
   return (
-    <Layout>
+    <>
       <Section title="Phonebook">
         <ContactForm />
       </Section>
@@ -24,7 +22,7 @@ function App({ contacts }) {
           <ContactsList />
         </Section>
       ) : null}
-    </Layout>
+    </>
   );
 }
 

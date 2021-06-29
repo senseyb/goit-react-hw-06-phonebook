@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { connect, useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import propTypes from "prop-types";
 import s from "./ContactForm.module.css";
 import { addContacts } from "../../redux/contacts-actions";

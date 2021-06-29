@@ -39,9 +39,9 @@ ContactsList.propTypes = {
   onDeleteBtn: propTypes.func,
   contacts: propTypes.arrayOf(
     propTypes.exact({
-      id: propTypes.string,
-      name: propTypes.string,
-      phone: propTypes.string,
+      id: propTypes.string.isRequired,
+      name: propTypes.string.isRequired,
+      phone: propTypes.string.isRequired,
     })
   ),
 };
